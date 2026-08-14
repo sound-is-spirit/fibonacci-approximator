@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story Point Fibonacci Adjacency Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">Fibonacci Adjacency</h1>
+    <p class="subtitle">Find the bounding story-point values.</p>
+
+    <form id="calc-form" class="form" novalidate>
+      <label class="label" for="story-input">Enter User Story Number</label>
+      <div class="row">
+        <input
+          id="story-input"
+          class="input"
+          type="number"
+          inputmode="numeric"
+          min="0"
+          step="1"
+          placeholder="e.g. 34"
+          autocomplete="off"
+        />
+        <button id="submit-btn" class="button" type="submit">Calculate</button>
+      </div>
+    </form>
+
+    <section class="result" aria-live="polite">
+      <div id="result" class="result-text">Enter a number to see its adjacent Fibonacci values.</div>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

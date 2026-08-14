@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Story Point Fibonacci Adjacency Calculator",
+  "version": "1.0.0",
+  "description": "Enter an Agile user story number and get its adjacent (or bounding) Fibonacci story-point values.",
+  "action": {
+    "default_title": "Story Point Fibonacci Adjacency Calculator",
+    "default_popup": "popup.html"
+  },
+  "icons": {},
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

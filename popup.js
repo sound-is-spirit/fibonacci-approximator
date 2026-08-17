@@ -76,7 +76,22 @@ function handleSubmit(event) {
     return;
   }
 
+  // Digits only — no letters, decimals, signs, or exponents.
+  if (!/^\d+$/.test(raw)) {
+    render({ error: "Please enter a whole number (digits only)." });
+    return;
+  }
+
   render(adjacentFibonacci(Number(raw)));
 }
+
+const input = document.getElementById("story-input");
+
+// Strip anything that isn't a digit as the user types, so invalid
+// characters can never linger in the field.
+input.addEventListener("input", () => {
+  const cleaned = input.value.replace(/\D+/g, "");
+  if (cleaned !== input.value) input.value = cleaned;
+});
 
 document.getElementById("calc-form").addEventListener("submit", handleSubmit);

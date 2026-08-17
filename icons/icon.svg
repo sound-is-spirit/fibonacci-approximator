@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <g fill="none" stroke="#111111" stroke-width="1.5" opacity="0.5">
-    <rect x="6" y="30" width="68.8" height="68.8"/>
-    <rect x="74.8" y="30" width="43" height="43"/>
-    <rect x="92" y="73" width="25.8" height="25.8"/>
-    <rect x="74.8" y="81.6" width="17.2" height="17.2"/>
-    <rect x="74.8" y="73" width="8.6" height="8.6"/>
-    <rect x="83.4" y="73" width="8.6" height="8.6"/>
+  <!-- Fibonacci Approximator action icon.
+       Artwork from icons/fibonacci-svg-v1.svg, re-centred so the digits keep
+       even 10px margins and nothing clips when Chrome scales this to 16px.
+       Glyphs are Arial text: render with a machine that has Arial (macOS does).
+       Ships as PNG; this file is the source. -->
+  <rect width="128" height="128" fill="#ffffff"/>
+  <g transform="translate(8.385,6.532) scale(0.99083)" fill="#111" style="font-family:'ArialMT','Arial',sans-serif">
+    <g transform="matrix(1,0,0,1,-8,19)"><text x="4.965px" y="30.563px" style="font-size:64px">1</text></g>
+    <g transform="matrix(1,0,0,1,31,82)"><text x="4.965px" y="30.563px" style="font-size:144px">2</text></g>
   </g>
-  <path fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
-        d="M 6,98.8 A 68.8,68.8 0 0 1 74.8,30 A 43,43 0 0 1 117.8,73 A 25.8,25.8 0 0 1 92,98.8 A 17.2,17.2 0 0 1 74.8,81.6 A 8.6,8.6 0 0 1 83.4,73 A 8.6,8.6 0 0 1 92,81.6"/>
 </svg>

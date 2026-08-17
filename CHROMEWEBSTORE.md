@@ -50,7 +50,8 @@ English
 
 | Permission | Type | Justification |
 |------------|------|---------------|
-| None | | This extension does not require any special permissions. |
+| activeTab | Core | Required to determine the URL of the current tab when the extension icon is clicked, ensuring we do not attempt to inject the UI into restricted `chrome://` pages. |
+| scripting | Core | Required to dynamically inject the extension's user interface (`content.js` overlay) into the active web page when triggered by the user. |
 
 ## Privacy & Data Use
 
@@ -66,7 +67,7 @@ English
 ## Privacy Policy
 
 **Privacy Policy URL** [RECOMMENDED]
-Not applicable (No data collected).
+https://github.com/sound-is-spirit/fibonacci-approximator/blob/main/PRIVACY.md
 
 ## Distribution
 
@@ -83,10 +84,10 @@ Vesa Metsä-Ketelä
 vesa.metsa-ketela@example.com
 
 **Support URL / Email** [RECOMMENDED]
-https://github.com/vesa.metsa-ketela/Fibonacci-Approximator
+https://github.com/sound-is-spirit/fibonacci-approximator
 
 **Homepage URL** [RECOMMENDED]
-https://github.com/vesa.metsa-ketela/Fibonacci-Approximator
+https://github.com/sound-is-spirit/fibonacci-approximator
 
 ## Version History
 

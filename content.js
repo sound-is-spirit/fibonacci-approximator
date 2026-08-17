@@ -6,6 +6,7 @@
   
   if (existing) {
     existing.style.display = existing.style.display === "none" ? "block" : "none";
+    chrome.runtime.sendMessage({ type: "FIBONACCI_STATE", isVisible: existing.style.display === "block" });
     return;
   }
 
@@ -133,4 +134,7 @@
     }
     render(adjacentFibonacci(Number(raw)));
   });
+
+  // Report initial state back to background script
+  chrome.runtime.sendMessage({ type: "FIBONACCI_STATE", isVisible: true });
 })();

@@ -18,13 +18,13 @@ function adjacentFibonacci(input) {
   // Condition A: exact match in the sequence.
   if (index !== -1) {
     if (index === 0) {
-      return { lower: 0, upper: 1 };
+      return { exact: true, lower: 0, upper: 1 };
     }
     if (index === fib.length - 1) {
       // Upper boundary: no succeeding value stored in the array.
       return { error: `${input} is the largest supported value; no succeeding boundary available.` };
     }
-    return { lower: fib[index - 1], upper: fib[index + 1] };
+    return { exact: true, lower: fib[index - 1], upper: fib[index + 1] };
   }
 
   // Upper boundary overflow: input exceeds the maximum stored value.
@@ -35,7 +35,7 @@ function adjacentFibonacci(input) {
   // Condition B: intermediate value — find i such that fib[i] < input < fib[i + 1].
   for (let i = 0; i < fib.length - 1; i++) {
     if (input > fib[i] && input < fib[i + 1]) {
-      return { lower: fib[i], upper: fib[i + 1] };
+      return { exact: false, lower: fib[i], upper: fib[i + 1] };
     }
   }
 
@@ -59,7 +59,11 @@ function render(result) {
   values.className = "values";
   values.textContent = `${result.lower} and ${result.upper}`;
 
-  el.appendChild(document.createTextNode("Adjacent Fibonacci values: "));
+  const lead = result.exact
+    ? "This is a Fibonacci value. Adjacent are: "
+    : "Nearest Fibonacci values: ";
+
+  el.appendChild(document.createTextNode(lead));
   el.appendChild(values);
 }
 

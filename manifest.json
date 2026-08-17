@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Story Point Fibonacci Adjacency Calculator",
+  "name": "Fibonacci Approximator",
   "version": "1.0.0",
-  "description": "Enter an Agile user story number and get its adjacent (or bounding) Fibonacci story-point values.",
+  "description": "Enter a number and get its adjacent (or nearest bounding) Fibonacci values.",
   "action": {
-    "default_title": "Story Point Fibonacci Adjacency Calculator",
+    "default_title": "Fibonacci Approximator",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon16.png",

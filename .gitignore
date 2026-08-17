@@ -7,3 +7,6 @@
 
 # Packaged extension
 *.zip
+
+# Affinity Lock Files
+*.af~lock~

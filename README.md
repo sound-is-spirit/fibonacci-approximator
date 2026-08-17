@@ -1,8 +1,8 @@
-# Story Point Fibonacci Adjacency Calculator
+# Fibonacci Approximator
 
 A minimal, privacy-first **Manifest V3** browser extension for Google Chrome and
-Microsoft Edge. Enter an Agile user-story number and get its adjacent (or
-bounding) Fibonacci story-point values.
+Microsoft Edge. Enter a number and get its adjacent (or nearest bounding)
+Fibonacci values.
 
 ## What it does
 
@@ -31,7 +31,7 @@ in-memory and discarded when the popup closes.
 | `manifest.json` | Manifest V3 config, popup action, strict CSP |
 | `popup.html` | Input field + result area |
 | `popup.js` | Adjacency logic (XSS-safe DOM via `textContent`) |
-| `styles.css` | Minimalist dark UI |
+| `styles.css` | Minimalist lo-fi wireframe UI |
 
 ## Install (unpacked, for local testing)
 

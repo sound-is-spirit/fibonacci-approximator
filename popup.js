@@ -72,7 +72,7 @@ function handleSubmit(event) {
   const raw = document.getElementById("story-input").value.trim();
 
   if (raw === "") {
-    render({ error: "Please enter a user story number." });
+    render({ error: "Please enter a number." });
     return;
   }
 
